@@ -413,6 +413,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1310355444530856, guid: 91de66de50ac94488abb3b2cc94e0a5b, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91de66de50ac94488abb3b2cc94e0a5b, type: 2}
   m_IsPrefabAsset: 0
@@ -432,6 +436,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65f4988937a82047b7c5e2c9440a5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1073868724 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4884165121132574, guid: 91de66de50ac94488abb3b2cc94e0a5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 669932257}
 --- !u!1 &1184994524
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,12 +533,15 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1184994524}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d29cc26b4e26c4847ba78d64f536afd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
+  life: 100
+  startposition: {x: 0, y: 0, z: 0}
+  other: {fileID: 0}
 --- !u!1 &1286594510
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,12 +634,15 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1286594510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d29cc26b4e26c4847ba78d64f536afd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
+  life: 100
+  startposition: {x: 0, y: 0, z: 0}
+  other: {fileID: 0}
 --- !u!1 &1969729281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100062, guid: 2892de347df6e5b4c8402088313f1f09,
@@ -644,7 +659,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d29cc26b4e26c4847ba78d64f536afd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.2
+  life: 100
+  startposition: {x: 0, y: 100, z: 0}
+  other: {fileID: 1073868724}
 --- !u!65 &1969729285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -656,7 +674,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 2.07, z: 1}
-  m_Center: {x: 0, y: 0.99, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1969729286
 MeshRenderer:
   m_ObjectHideFlags: 0

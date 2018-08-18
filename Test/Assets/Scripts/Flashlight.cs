@@ -23,7 +23,9 @@ public class Flashlight : MonoBehaviour
             GameObject go = GameObject.Find(hit.collider.name);
             if (go.tag == "ghost")
             {
-                go.SetActive(false);
+                //go.SetActive(false);
+                Ghost gst = go.GetComponent<Ghost>();
+                gst.Lifedcrease();
             }
             //go.GetComponent<Renderer>().enabled = false;
 
